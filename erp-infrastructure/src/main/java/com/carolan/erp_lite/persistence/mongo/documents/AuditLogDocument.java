@@ -3,9 +3,9 @@ package com.carolan.erp_lite.persistence.mongo.documents;
 import java.time.Instant;
 
 import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -19,7 +19,7 @@ import lombok.Setter;
 @Builder
 @Document(collection = "audit_logs")
 public class AuditLogDocument {
-    @Id
+    @Id 
     private ObjectId id;
 
     private String className;

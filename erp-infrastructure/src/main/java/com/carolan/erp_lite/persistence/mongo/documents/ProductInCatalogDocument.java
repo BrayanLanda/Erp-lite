@@ -6,21 +6,20 @@ import java.util.List;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Document(collection = "product_documents")
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
 @Builder
+@Document(collection = "product_documents")
 public class ProductInCatalogDocument {
-    @Id 
+    @org.springframework.data.annotation.Id 
     private String id;
 
     private boolean active;
