@@ -1,4 +1,4 @@
-package com.carolan.erp_lite.entities;
+package com.carolan.erp_lite.persistence.jpa.entities;
 
 import java.math.BigDecimal;
 import java.util.UUID;
